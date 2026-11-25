@@ -1,0 +1,189 @@
+/* ベース設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f5f7f9;
+}
+
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.site-title a {
+  color: #1a202c;
+}
+
+.site-title a:hover {
+  text-decoration: none;
+}
+
+.site-description {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+/* メインレイアウト */
+.main-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.content-area {
+  flex: 1;
+}
+
+/* 記事カード */
+.post {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.post-header {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #edf2f7;
+  padding-bottom: 12px;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-right: 10px;
+}
+
+.post-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.post-title {
+  font-size: 1.35rem;
+  margin-top: 8px;
+}
+
+.post-title a {
+  color: #2d3748;
+}
+
+.post-body p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.post-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* サイドバー */
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.widget {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.widget-title {
+  font-size: 1rem;
+  color: #2d3748;
+  border-bottom: 2px solid #2b6cb0;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  background-color: #cbd5e0;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+}
+
+.profile-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.profile-bio {
+  font-size: 0.85rem;
+  color: #4a5568;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-list li {
+  border-bottom: 1px solid #edf2f7;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.category-list li:last-child {
+  border-bottom: none;
+}
+
+/* フッター */
+.site-footer {
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e2e8f0;
+  color: #718096;
+  font-size: 0.85rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
